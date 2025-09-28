@@ -202,3 +202,72 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+/* Light Mode (Default) */
+:root {
+    --primary-color: #9b59b6; /* Medium purple */
+    --secondary-color: #6c3483; /* Darker purple for accents */
+    --background-color: #f3e8ff; /* Light lavender */
+    --text-color: #4a235a; /* Deep purple text */
+    --accent-color: #ba68c8; /* Soft purple-pink for buttons */
+}
+
+/* Dark Mode */
+.dark-mode {
+    --primary-color: #6a0dad; /* Rich dark purple */
+    --secondary-color: #4b0082; /* Indigo/darker purple */
+    --background-color: #1a001f; /* Very dark purple background */
+    --text-color: #f3e8ff; /* Light lavender text */
+    --accent-color: #bb86fc; /* Light violet for accents */
+}
+
+/* Apply General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+/* Buttons */
+button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #8e44ad; /* darker purple hover */
+}
