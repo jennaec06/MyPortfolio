@@ -35,3 +35,85 @@ document.addEventListener("scroll", function() {
         }
     });
 });
+// Project Filtering Function
+function filterProjects(category) {
+    let projects = document.querySelectorAll(".project");
+    
+    projects.forEach(project => {
+        if (category === "all" || project.dataset.category === category) {
+            project.style.display = "block";
+        } else {
+            project.style.display = "none";
+        }
+    });
+}
+// Smooth Scrolling for Navigation Links
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", function(event) {
+        event.preventDefault();
+        let targetSection = document.querySelector(this.getAttribute("href"));
+        targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+});
+// Fade-in Animation on Scroll
+document.addEventListener("scroll", function() {
+    document.querySelectorAll(".fade-in").forEach(section => {
+        let position = section.getBoundingClientRect().top;
+        let windowHeight = window.innerHeight;
+        
+        if (position < windowHeight - 50) {
+            section.classList.add("visible");
+        }
+    });
+});
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent actual form submission
+
+    let isValid = true;
+
+    // Name Validation
+    let nameInput = document.getElementById("name");
+    let nameError = document.getElementById("nameError");
+    if (nameInput.value.trim() === "") {
+        nameError.textContent = "Name is required.";
+        nameInput.style.border = "1px solid red";
+        isValid = false;
+    } else {
+        nameError.textContent = "";
+        nameInput.style.border = "1px solid green";
+    }
+
+    // Email Validation
+    let emailInput = document.getElementById("email");
+    let emailError = document.getElementById("emailError");
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (!emailInput.value.match(emailPattern)) {
+        emailError.textContent = "Enter a valid email address.";
+        emailInput.style.border = "1px solid red";
+        isValid = false;
+    } else {
+        emailError.textContent = "";
+        emailInput.style.border = "1px solid green";
+    }
+
+    // Message Validation
+    let messageInput = document.getElementById("message");
+    let messageError = document.getElementById("messageError");
+    if (messageInput.value.trim() === "") {
+        messageError.textContent = "Message cannot be empty.";
+        messageInput.style.border = "1px solid red";
+        isValid = false;
+    } else {
+        messageError.textContent = "";
+        messageInput.style.border = "1px solid green";
+    }
+
+    // If all fields are valid, display success message
+    if (isValid) {
+        document.getElementById("successMessage").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("successMessage").style.display = "none";
+            document.getElementById("contactForm").reset();
+        }, 3000);
+    }
+});
