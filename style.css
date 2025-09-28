@@ -213,13 +213,12 @@ button:hover {
 
 /* Dark Mode */
 .dark-mode {
-    --primary-color: #6a0dad; /* Rich dark purple */
-    --secondary-color: #4b0082; /* Indigo/darker purple */
-    --background-color: #1a001f; /* Very dark purple background */
-    --text-color: #f3e8ff; /* Light lavender text */
-    --accent-color: #bb86fc; /* Light violet for accents */
+    --primary-color: #4b007a;       /* Darker rich purple */
+    --secondary-color: #3a0060;     /* Darker accent purple */
+    --background-color: #1f002b;    /* Deep but not black purple */
+    --text-color: #bf92ff;          /* Darker lavender text for readability */
+    --accent-color: #9955ff;        /* Deeper violet for buttons/highlights */
 }
-
 /* Apply General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
