@@ -192,7 +192,7 @@ input, textarea {
 }
 
 button {
-    background-color: #3498db;
+    background-color: #8e44ad;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -200,7 +200,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #2980b9;
+    background-color: #8e44ad;
 }
 /* Light Mode (Default) */
 :root {
@@ -272,10 +272,10 @@ button:hover {
 }
 /* Button Hover Effect (Cross-Browser Support) */
 button {
-    background-color: #3498db;
-    color: white;
+    background-color: #6a0dad !important; /* dark purple */
+    color: white !important;
     padding: 10px 20px;
-    border: none;
+    border: none !important;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -283,8 +283,27 @@ button {
 
 /* Vendor Prefixes */
 button:hover {
-    background-color: #2980b9;
+    background-color: #4b0082 !important; /* darker purple on hover */
     -webkit-transition: background-color 0.3s ease-in-out;
     -moz-transition: background-color 0.3s ease-in-out;
     -o-transition: background-color 0.3s ease-in-out;
+}
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #4b0082;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #4b0082;
 }
