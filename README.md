@@ -1,11 +1,11 @@
 <<<<<<< HEAD
-# Portfolio Website  
+# Portfolio Website – Final Version  
 
 ## 🌐 Live Website  
 [View My Portfolio](https://jennaec06.github.io/MyPortfolio/)  
 
 ## 📌 Project Overview  
-This is my personal portfolio website showcasing my projects, skills, and contact information.  
+This is my final capstone portfolio website showcasing my web development skills, projects, and resume.  
 
 ## 🔧 Technologies Used  
 - HTML  
@@ -13,10 +13,17 @@ This is my personal portfolio website showcasing my projects, skills, and contac
 - JavaScript  
 - GitHub Pages for deployment  
 
+## 🚀 Features  
+✅ Responsive Design  
+✅ Dark Mode Toggle  
+✅ Project Filtering & Animations  
+✅ Downloadable Resume  
+✅ SEO Optimization & Accessibility Enhancements  
+
 ## 📞 Contact Me  
-Feel free to connect with me:  
 - 📧 Email: cronleyjenna@gmail.com  
 - 🔗 LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/jennacronley/)  
+- 🖥️ GitHub: [Your GitHub](https://github.com/jennaec06)
 =======
 # Portfolio Website  
 
